@@ -52,10 +52,11 @@ export const Login = ({ switchAuthHandler }) => {
         setFormState((prevState) => ({
             ...prevState,
             [field]: {
+                ...prevState[field],
                 isValid,
                 showError: !isValid
             }
-        }))
+        }));
     }
 
     const handleLogin = (event) => {
