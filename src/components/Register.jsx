@@ -102,6 +102,7 @@ export const Register = ({ switchAuthHandler }) => {
                     onBlurHandler={handleInputValidationOnBlur}
                     showErrorMessage={formState.email.showError}
                     validationMessage={emailValidationMessage}
+                    required={true}
                 />
                 <Input
                     field='username'
@@ -112,6 +113,7 @@ export const Register = ({ switchAuthHandler }) => {
                     onBlurHandler={handleInputValidationOnBlur}
                     showErrorMessage={formState.username.showError}
                     validationMessage={validateUsernameMessage}
+                    required={true}
                 />
                 <Input
                     field='password'
@@ -122,6 +124,7 @@ export const Register = ({ switchAuthHandler }) => {
                     onBlurHandler={handleInputValidationOnBlur}
                     showErrorMessage={formState.password.showError}
                     validationMessage={validatePasswordMessage}
+                    required={true}
                 />
                 <Input
                     field='passwordConfir'
@@ -132,6 +135,7 @@ export const Register = ({ switchAuthHandler }) => {
                     onBlurHandler={handleInputValidationOnBlur}
                     showErrorMessage={formState.passwordConfir.showError}
                     validationMessage={passwordConfirmationMessage}
+                    required={true}
                 />
                 <button onClick={handleRegister} disabled={isSubmitButtonDisable}>
                     Register
