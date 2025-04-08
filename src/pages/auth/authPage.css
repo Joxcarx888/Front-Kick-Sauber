@@ -3,12 +3,19 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
- 
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom right, #2cd100, #000000);
+}
+
 .login-container, .register-container {
     width: 500px;
-    margin: 0 auto;
+    margin: 25px auto 0 auto; 
     border: 1px solid #ccc;
     border-radius: 5px;
     display: flex;
@@ -16,30 +23,41 @@
     align-items: center;
     justify-content: space-evenly;
     height: auto;
-    box-shadow: 10px 10px 10px #0b336b;
+    box-shadow: 10px 10px 10px #ccc;
     padding: 25px;
+    background-color: black;
 }
- 
+
+.auth-form input {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 400px;
+    margin: 5px 0;
+}
+
+.auth-form-label {
+    width: 410px;
+    font-weight: 500;
+    color: #2cd100; 
+}
+
 .register-container {
-    height: 500px;
+    min-height: 600px; 
 }
- 
+
 .auth-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; 
+    width: 100%;
 }
- 
-.auth-form input {
-    margin: 5px 0;
-    padding: 5px;
-    width: 400px;
-}
- 
+
 .auth-form button {
     cursor: pointer;
-    background-color: #0b336b; /* Twitch Purple */
+    background-color: #2cd100; /* Twitch Purple */
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -50,39 +68,35 @@
     transition: 0.3s;
     line-height: 10px;
 }
- 
+
 .auth-form button:hover {
     opacity: 0.8;
 }
- 
+
 .auth-form button:disabled {
-    opacity: 0.3;
+    opacity: 1;
 }
- 
-.auth-form-label {
-    width: 410px;
-    font-weight: 500;
-}
- 
+
 .auth-form-logo-container {
     font-size: 26px;
     font-weight: bold;
 }
- 
+
 .auth-form-switch-label {
-    color: #2b7df0;
+    color: #ffffff;
     font-weight: bold;
     font-size: 14px;
     transition: 0.3s;
     cursor: pointer;
     padding-top: 10px;
 }
- 
+
 .auth-form-switch-label:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
- 
+
 .auth-form-validation-message {
     width: 400px;
     color: red;
+    justify-content: space-evenly;
 }

@@ -83,7 +83,7 @@ export const Login = ({ switchAuthHandler }) => {
                 />
                 <Input
                     field='password'
-                    label='password'
+                    label='Password'
                     value={formState.password.value}
                     onChangeHandler={handleInputValueChange}
                     type= 'password'

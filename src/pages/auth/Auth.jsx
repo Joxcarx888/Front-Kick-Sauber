@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Login } from "../../components/Login";
+import { Register } from "../../components/Register";
 
 import "./authPage.css"
 
@@ -13,11 +14,11 @@ import "./authPage.css"
     }
 
   return (
-    <div className="auth-controller">
+    <div className="auth-container">
         {isLogin ? (
             <Login switchAuthHandler={handleAuthPageToggle}/>
         ) : (
-            register
+            <Register switchAuthHandler={handleAuthPageToggle}/>
         )}
     </div>
   )
