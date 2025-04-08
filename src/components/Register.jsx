@@ -138,7 +138,7 @@ export const Register = ({ switchAuthHandler }) => {
                     required={true}
                 />
                 <button onClick={handleRegister} disabled={isSubmitButtonDisable}>
-                    Register
+                    Registrarse
                 </button>
             </form>
             <span onClick={switchAuthHandler} className='auth-form-switch-label'>
