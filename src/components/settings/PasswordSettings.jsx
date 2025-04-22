@@ -9,7 +9,7 @@ import { Input } from '../Input'
 const inputs = [
     {
         field: 'password',
-        label: 'password',
+        label: 'Password',
         validationMessage: 'validatePasswordMessage',
         type: 'password'
     },
