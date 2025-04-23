@@ -1,5 +1,5 @@
 import toast from "react-hot-toast";
-import { followedChannel as followChannelRequest } from "../../services";
+import { followChannel as followChannelRequest } from "../../services";
 
 export const useFollowChannel = () => {
 

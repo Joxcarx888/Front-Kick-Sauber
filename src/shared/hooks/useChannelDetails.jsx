@@ -6,7 +6,7 @@ export const useChannelDetails = () => {
 
     const [ channelDetails, setChannelDetails ] = useState();
 
-    const getChannelsDetails = async () => {
+    const getChannelsDetails = async (id) => {
         const responseData = await getChannelsDetailsRequest(id)
 
         if(responseData.error){
